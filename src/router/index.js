@@ -12,6 +12,14 @@ const router = createRouter({
       path: '/directives',
       name: 'directives',
       component: () => import('../views/DirectivesView.vue')
+    },{
+      path: '/api',
+      name: 'api',
+      component: () => import('../views/ApiView.vue')
+    },{
+      path: '/api/:id',
+      name: 'apiDetails',
+      component: () => import('../views/ApiDetailsView.vue')
     },
 
   ]
